@@ -3,6 +3,9 @@ In this project, I have worked on Spring boot to create CRUD APIs using GraphQL.
 
 # How to run this project :
 
+Goto http://localhost:8080/apis/graphql and send a POST request with a query/mutation request body.
+
+
 1- Request Body for query : (example)
 
 
