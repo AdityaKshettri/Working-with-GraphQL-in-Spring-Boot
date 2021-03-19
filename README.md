@@ -5,6 +5,7 @@ In this project, I have worked on Spring boot to create CRUD APIs using GraphQL.
 
 1- Request Body for query : (example)
 
+
 query {
 
     findAllBooks {
@@ -39,7 +40,9 @@ query {
     
 }
 
+
 2- Request Body for mutation : (example)
+
 
 mutation {
 
@@ -54,3 +57,4 @@ mutation {
     }
     
 }
+
