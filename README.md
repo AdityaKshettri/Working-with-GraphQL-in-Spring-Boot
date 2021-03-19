@@ -1,7 +1,7 @@
 # CRUD-with-GraphQL-in-Spring-Boot
 In this project, I have worked on Spring boot to create CRUD APIs using GraphQL.
 
-# How to run:
+# How to run this project :
 
 1- Request Body for query : (example)
 
