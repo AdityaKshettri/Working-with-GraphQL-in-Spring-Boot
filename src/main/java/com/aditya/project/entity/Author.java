@@ -1,8 +1,6 @@
 package com.aditya.project.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
@@ -16,17 +14,25 @@ import javax.persistence.Table;
 @Entity
 @Table
 @NoArgsConstructor
-@AllArgsConstructor
 public class Author {
 
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 
     @Column(name = "age")
     private int age;
+
+    public Author(Long id) {
+        this.id = id;
+    }
+
+    public Author(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 }

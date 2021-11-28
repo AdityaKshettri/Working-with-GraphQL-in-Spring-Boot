@@ -1,6 +1,5 @@
 package com.aditya.project.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -17,13 +16,12 @@ import javax.persistence.Table;
 @Entity
 @Table
 @NoArgsConstructor
-@AllArgsConstructor
 public class Book {
 
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "title", nullable = false, unique = true)
     private String title;

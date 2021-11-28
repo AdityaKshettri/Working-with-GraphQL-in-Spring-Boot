@@ -5,15 +5,15 @@ import com.aditya.project.entity.Book;
 import com.aditya.project.repository.AuthorRepository;
 import com.coxautodev.graphql.tools.GraphQLResolver;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 @RequiredArgsConstructor
 public class BookResolver implements GraphQLResolver<Book> {
 
-    private final AuthorRepository authorRepository;
+    private final AuthorRepository repository;
 
     public Author getAuthor(Book book) {
-        return authorRepository.findById(book.getAuthor().getId()).orElseThrow(null);
+        return repository.findById(book.getAuthor().getId()).orElse(null);
     }
 }
